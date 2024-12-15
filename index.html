@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Camera</title>
+</head>
+<body>
+    <h1>Camera Access</h1>
+    <video id="video" autoplay playsinline style="width: 100%; max-height: 500px;"></video>
+
+    <script>
+        // فتح الكاميرا باستخدام getUserMedia
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            const video = document.getElementById("video");
+            video.srcObject = stream;
+        })
+        .catch(function (err) {
+            alert("حدث خطأ عند فتح الكاميرا: " + err.message);
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Camera</title>
+</head>
+<body>
+    <h1>Camera Access</h1>
+    <video id="video" autoplay playsinline style="width: 100%; max-height: 500px;"></video>
+
+    <script>
+        // فتح الكاميرا باستخدام getUserMedia
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            const video = document.getElementById("video");
+            video.srcObject = stream;
+        })
+        .catch(function (err) {
+            alert("حدث خطأ عند فتح الكاميرا: " + err.message);
+        });
+    </script>
+</body>
+</html>
